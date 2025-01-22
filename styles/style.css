@@ -159,6 +159,7 @@
 .card-link {
   display: block;
   height: 100%;
+  text-decoration: none;
 }
 
 .card {
@@ -216,12 +217,24 @@
 .about {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  padding: 0 50px;
+  gap: 22px;
+  padding: 0 10px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.about__column {
+  max-width: 100%;
+  flex-grow: 1;
+}
+
+.about__column:nth-child(2) {
+  max-width: 100%;
 }
 
 .about__logo {
   margin-top: 180px;
-  margin-left: 20px;
+  margin-left: 60px;
   display: flex;
   border-radius: 50%;
   width: 240px;
@@ -237,15 +250,18 @@
 .about__title {
   text-transform: uppercase;
   font-size: 40px;
-  margin-top: 281px;
+  margin-top: 279px;
   margin-bottom: 100px;
 }
 
 .about__text {
+  max-width: none;
+  width: auto;
   font-size: 20px;
   margin-bottom: 23px;
-  padding-left: 1.5px;
   line-height: 1.2;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 /*---------------------------------------------------------------------------------------------------*/
