@@ -59,7 +59,6 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  overflow: hidden;
 }
 
 .overlay {
@@ -79,23 +78,29 @@
 }
 
 .aligned-text {
-  display: block;
-  letter-spacing: 3px;
+  display: flex;
+}
+
+.aligned-text_left {
+  justify-content: flex-start;
 }
 
 .aligned-text_center {
-  text-align: center;
-  margin-right: 61px;
+  justify-content: center;
   margin-top: 10px;
 }
 
 .aligned-text_right {
-  text-align: right;
+  justify-content: flex-end;
   margin-top: 5px;
 }
 
-.letter-spacing-extended {
-  letter-spacing: 37px;
+.letter-spacing-30 {
+  letter-spacing: 30px;
+}
+
+.letter-spacing-60 {
+  letter-spacing: 60px;
 }
 
 .no-letter-spacing {
@@ -133,6 +138,9 @@
 /*---------------------------------------------------------------------------------------------------*/
 
 .lots {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
   padding: 178px 24px 0px;
 }
 
@@ -153,7 +161,7 @@
 }
 
 .lots__card-list-item {
-  list-style: none;
+  display: block;
 }
 
 .card-link {
@@ -168,16 +176,16 @@
   justify-content: space-between;
   position: relative;
   color: #fff;
-  width: 332px;
+  width: 100%;
   min-height: 563px;
   background-position: center;
   background-size: cover;
-  overflow: hidden;
 }
 
 .card__title {
-  position: relative;
-  margin: 52px 40px 0 40px;
+  margin-top: 52px;
+  margin-left: 40px;
+  margin-right: 40px;
   text-transform: uppercase;
   text-decoration: underline;
   font-size: 22px;
@@ -186,10 +194,9 @@
 }
 
 .card__text {
-  position: relative;
   font-size: 20px;
   line-height: 24px;
-  padding: 0px 40px 48px;
+  margin: 0px 40px 48px;
   z-index: 2;
 }
 
@@ -207,9 +214,8 @@
 
 .lots__look-more-link {
   font-size: 20px;
-  margin-left: 38.5px;
-  position: relative;
-  top: -1.5px;
+  margin: -1.5px 0 0 40px;
+  display: inline-block;
 }
 
 /*---------------------------------------------------------------------------------------------------*/
