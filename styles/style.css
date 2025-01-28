@@ -95,11 +95,11 @@
   margin-top: 5px;
 }
 
-.letter-spacing-30 {
+.letter-spacing-small {
   letter-spacing: 30px;
 }
 
-.letter-spacing-60 {
+.letter-spacing-large {
   letter-spacing: 60px;
 }
 
@@ -155,7 +155,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 25px;
-  margin-bottom: 34px;
+  margin-bottom: 32px;
   padding: 0;
   list-style: none;
 }
@@ -214,8 +214,9 @@
 
 .lots__look-more-link {
   font-size: 20px;
-  margin: -1.5px 0 0 40px;
+  margin: 0 0 0 40px;
   display: inline-block;
+  align-self: flex-start;
 }
 
 /*---------------------------------------------------------------------------------------------------*/
@@ -274,6 +275,7 @@
 
 .footer {
   margin-top: 160px;
+  padding-bottom: 88px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-between;
